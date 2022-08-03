@@ -1,0 +1,78 @@
+.populares {
+    padding: 3rem 0;
+}
+
+.populares__conteudo {
+    display: flex;
+    flex-wrap: wrap; /*quando estourar o tamanho ele encolhe*/
+    grid-area: conteudo;
+    padding: 1rem 0;
+}
+
+.populares__card { /*fica em formato de post*/
+    background: #fdfdfd;
+    display: grid;
+    grid-template-areas: 
+       "card-imagem"
+       "card-corpo";
+    grid-template-columns: 100%;
+    /* width: calc(20% - 1rem); da espaçamento entre os post*/
+}
+
+.populares__card___imagem {
+    grid-area: card-imagem; /*onde a imagem vai fica*/
+    height: 100%;
+    width: 100%; /* imagem deve ocupar 100% do espaço*/
+}
+
+.populares__card___corpo {
+    display: grid;
+    grid-row-gap: .5rem;
+    grid-area: card-corpo;
+    grid-template-areas: 
+        "card-cabecalho"
+        "card-conteudo";
+    grid-template-rows: 50px auto;    
+    padding: .74rem;
+}
+
+.populares__card___titulo { /*titulo do card/post e configurando o tamanho e a cor das letras*/
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.populares__card___data {
+    color: #808080;
+    font-size: .9rem;
+}
+
+.populares__card___descricao{
+    color: #333;
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: justify; /* para que o texto fique alinhado*/
+}
+
+.populares__titulo { /* arrumando o titulo da seção populares*/
+    font-weight: 500;
+}
+
+.populares__icone { /*o icone de populares/titulo sendo configurado para ficar longe do vizualize */
+    margin-right: .25rem;
+}
+
+.populares__cabecalho { /*separa os icones aplicativos populares e vizualize mais */
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content:space-between;
+}
+
+.populares__botao { /*botao vizualize todos sendo configurado para ficar trasparente */
+    background: transparent;
+    border: none;
+    color: #333;
+}
+
+.populares__card:last-child {
+    margin-right: 0;
+}

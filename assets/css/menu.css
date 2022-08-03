@@ -1,0 +1,9 @@
+.menu__link { /*icone do cabecalho para deixar a cor preta e espaçamento */
+    color: #333;
+    padding: .5rem 1rem;
+}
+
+.menu__link:hover, .menu__link.ativo {
+    border-bottom: 2px solid #0073e6; /* no primeiro quando o mouse passa em cima dos botões
+    no menu fica com uma bordinha azul e no .menu__link.ativo se clicado também fica com bordinha azul*/
+}

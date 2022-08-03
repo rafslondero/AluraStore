@@ -1,0 +1,36 @@
+.app {
+    background: #f1f1f1;
+    display: grid;  /* tipo de tela/como vai ser o tema layout*/
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: /* cada area da página*/
+    "cabecalho"
+    "conteudo"
+    "rodape";
+    grid-template-columns: auto;/*colunas tem tamanho automático corespondente com o que vai conter nelas*/
+    grid-template-rows: 50px auto auto;/* tamanhos possíveis para cada uma das linha, como cabeçalho e conteudo
+    é importante que estejam na ordem, 50px é do cabeçalho e 100vh é do conteudo*/
+
+}
+
+.cabecalho {
+  align-items: center;
+  display: flex;
+  padding: 0 2rem;
+  grid-area: cabecalho;/*fala par o cabeçalho que o cabeçalho tem que ficar dentro do cabeçalho*/
+}
+ 
+.conteudo {
+  grid-area: conteudo;
+  padding: 0 2rem;
+}
+
+.rodape {
+  background: #fdfdfd;
+  color: #333;
+  font-size: .8rem;
+  grid-area: rodape;
+  padding: 1rem;
+  text-align: center;
+
+
+} 
